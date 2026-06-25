@@ -4,7 +4,7 @@ A MERN-based AI agent website with a ChatGPT/Gemini-style interface, prompt-base
 
 ## Quick Start
 
-Node.js version: `v24.16.0`
+Node.js version: `24.x` recommended. Local development was tested with `v24.16.0`.
 
 ```bash
 npm run install:all
