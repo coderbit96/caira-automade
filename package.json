@@ -1,0 +1,21 @@
+{
+  "name": "caira-automade",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MERN AI agent website for chat, project summaries, image generation, image enhancement, and code generation.",
+  "scripts": {
+    "predev": "npm run stop",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "stop": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/stop-dev.ps1",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "engines": {
+    "node": "24.16.0",
+    "npm": ">=11"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
